@@ -66,13 +66,32 @@
       height: 100%;
       pointer-events: none;
     }
-
+    .photos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .photos img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #f0f0f0;
+      font-style: italic;
+    }
     /* Responsive styles */
     @media (max-width: 768px) {
       h1 { font-size: 2.2rem; }
       h2 { font-size: 1.2rem; }
       .cake { font-size: 4rem; }
       button { font-size: 0.9rem; padding: 10px 20px; }
+      .photos img { width: 140px; }
     }
 
     @media (max-width: 480px) {
@@ -80,6 +99,7 @@
       h2 { font-size: 1rem; }
       .cake { font-size: 3rem; }
       button { font-size: 0.8rem; padding: 8px 16px; }
+      .photos img { width: 120px; }
     }
   </style>
 </head>
@@ -87,6 +107,14 @@
   <h1>🎉 Happy Birthday Ibnu & Tira 🎉</h1>
   <h2>Semoga panjang umur, sehat, dan bahagia selalu! 💪</h2>
   <div class="cake">🎂</div>
+
+  <div class="photos">
+    <img src="8f9c5ad2-08bd-4423-bd09-ca2b03a568d7.jpg" alt="Ibnu Fauzi">
+    <img src="2fee448e-8195-4a2a-b0c5-dc593580866f.png" alt="Tira Yunas">
+  </div>
+
+  <div class="note">✨ Saudara yang sudah lama terpisah ✨</div>
+
   <button onclick="playMusic()">Putar Musik 🎶</button>
 
   <canvas id="confetti"></canvas>
